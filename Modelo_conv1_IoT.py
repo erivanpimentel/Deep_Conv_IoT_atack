@@ -1,3 +1,4 @@
+# -->>>> A base de dados Utilizada no modelo está disponivél em: https://www.unb.ca/cic/datasets/iotdataset-2023.html
 #função de callbackt
 class Mycallback(tf.keras.callbacks.Callback):
     def on_epochs_end(self, epoch, logs={}):
@@ -7,7 +8,7 @@ class Mycallback(tf.keras.callbacks.Callback):
 
 #vamos criar o modelo de rede Conv1D
 # 64 O Números de filtros (Kernel)
-# (6) --> o tamanha de cada filtro
+# (3) --> o tamanha de cada filtro
 # input_shape=(,1) --> tamanho da imagem em scala de cinza
 # activation="relu" --> função de ativação
 def modeloIoT(previssores_train, classe_train):

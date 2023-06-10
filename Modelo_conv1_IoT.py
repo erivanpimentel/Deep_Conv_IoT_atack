@@ -1,4 +1,4 @@
-#função de callback
+#função de callbackt
 class Mycallback(tf.keras.callbacks.Callback):
     def on_epochs_end(self, epoch, logs={}):
         if logs.get('accuracy') > 0.8065:
